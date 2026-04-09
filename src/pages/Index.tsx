@@ -1,6 +1,6 @@
 import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { ArrowRight, Feather, Layers, Sparkles } from 'lucide-react';
+import { ArrowRight, Feather, Layers, Sparkles, Bot } from 'lucide-react';
 import heroImage from '@/assets/hero-model.jpg';
 import { products } from '@/lib/products';
 import ProductCard from '@/components/ProductCard';
@@ -18,11 +18,12 @@ export default function Index() {
     <div className="pb-24">
       {/* AI Banner */}
       <div className="flex items-center justify-center gap-2 bg-secondary/80 border-b border-border px-4 py-2.5">
-      <Bot size={14} className="text-muted-foreground shrink-0" />
-      <p className="text-xs text-muted-foreground text-center leading-snug">
-    Данный сайт сгенерирован с помощью искусственного интеллекта
-  </p>
-</div>
+        <Bot size={14} className="text-muted-foreground shrink-0" />
+        <p className="text-xs text-muted-foreground text-center leading-snug">
+          Данный сайт сгенерирован с помощью искусственного интеллекта
+        </p>
+      </div>
+
       {/* Hero */}
       <section className="relative h-[85vh] overflow-hidden">
         <img
